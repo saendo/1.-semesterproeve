@@ -16,6 +16,24 @@ body {
 
 * {border: 1px dotted purple;}
 
+/*hover sektion*/
+.photoshop-section 
+img:hover {
+    transform: scale(1.2);
+}
+
+.portrait-section-1
+img:hover {
+    transform: scale(1.2);
+}
+
+.portrait-section-2
+img:hover {
+    transform: scale(1.2);
+}
+
+/*header sektion*/
+
 header {
     position: fixed;
     width: 80%;
@@ -25,10 +43,11 @@ header {
     top: 50px;
     margin: auto;
     border-radius: 22px;
-    background-color: white;
+    background-color: #B6EEF1;
     left: 0;
     right: 0;
-    padding: 12px;
+    padding: 0px 16px 0px 16px;
+    z-index: 9999;
 }
 
 header nav {
@@ -109,7 +128,7 @@ h4 {
 /*Portræt sektion*/
 
 .portrait-section-1,
-.portrait-section-steps-2 {
+.portrait-section-2 {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -192,16 +211,15 @@ h4 {
 
 
 #float {
-    animation: wiggleani 1s infinite;
+  animation: wiggleani 5s infinite;
+  height: 80px;
+  transform: translateX(200px);
 }
 
 @keyframes wiggleani {
-  0%   { transform: translateX(0); }
-  15%  { transform: translateX(-20px); }
-  30%  { transform: translateX(20px); }
-  45%  { transform: translateX(-20px); }
-  60%  { transform: translateX(20px); }
-  75%  { transform: translateX(-10px); }
-  90%  { transform: translateX(10px); }
-  100% { transform: translateX(0); }
+  0% { transform: rotate(-45deg); }
+  25%  { transform: rotate(-45deg); }
+  75%  { transform: rotate(45deg); }
+  100% { transform: rotate(-45deg); }
 }
+
