@@ -241,7 +241,9 @@ h4 {
     align-items: center;
 }
 
-
+.Fodboldbilleder {
+    display: flex;
+}
 
 
 #float {
