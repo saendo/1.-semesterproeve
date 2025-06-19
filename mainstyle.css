@@ -7,6 +7,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {  
     background-color: var(--clr-background);
     color: var(--clr-text);
@@ -249,7 +253,6 @@ h4 {
    margin-inline: auto;
    width: min(90%, 71rem);
 }
-
 
 .split{
    display: flex;
