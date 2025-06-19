@@ -11,10 +11,12 @@ body {
     background-color: var(--clr-background);
     color: var(--clr-text);
     margin: 0;
-    padding-top: 300px; /* afstand fra top */
+    padding-top: 150px; /* afstand fra top */
+    font-family: "Kanit", sans-serif;
 }
 
-* {border: 1px dotted purple;}
+
+* {border: 1px dotted purple;} 
 
 /*hover sektion*/
 .photoshop-section 
@@ -58,6 +60,17 @@ header nav {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    margin-right: 5vh;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .hero {
@@ -68,13 +81,34 @@ header nav {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+.hero div {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
 }
+
+.hero-L {
+
+    flex: 15%;
+    margin: auto;
+}
+
+.hero-M {
+    flex: 55%;
+    margin: auto;
+    padding: 0vh 5vh 0vh 5vh;
+}
+
+.hero-R {
+    flex: 30%;
+    margin: auto;
+}
+
 
 .sanderherotext {
     position: absolute;
@@ -213,7 +247,7 @@ h4 {
 #float {
   animation: wiggleani 5s infinite;
   height: 80px;
-  transform: translateX(200px);
+  margin-left: 100px;
 }
 
 @keyframes wiggleani {
@@ -223,3 +257,9 @@ h4 {
   100% { transform: rotate(-45deg); }
 }
 
+  /* CSS styles for telefoner og sådan noget der ikk :) */
+
+@media (max-width: 767px) {
+    div {flex-direction: column !important;}
+    
+}
