@@ -242,7 +242,18 @@ h4 {
 }
 
 .Fodboldbilleder {
-    display: flex;
+    grid-column: auto;
+}
+
+.container  {
+   margin-inline: auto;
+   width: min(90%, 71rem);
+}
+
+
+.split{
+   display: flex;
+   flex-direction: column;
 }
 
 
