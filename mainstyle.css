@@ -144,6 +144,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 740px;
+    margin-top: 0px;
 }
 
 .portfolio-section-boks-to {
@@ -152,6 +153,7 @@ h4 {
         display: flex;
     flex-direction: column;
     gap: 150px;
+    margin-top: 40px;
 }
 
 .portfolio-section-boks-tre {
@@ -160,6 +162,7 @@ h4 {
         display: flex;
     flex-direction: column;
     gap: 740px;
+    margin-top: 80px;
 }
 
 /*Portræt sektion*/
@@ -265,6 +268,12 @@ h4 {
   margin-left: 100px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 @keyframes wiggleani {
   0% { transform: rotate(-45deg); }
   25%  { transform: rotate(-45deg); }
@@ -275,6 +284,10 @@ h4 {
   /* CSS styles for telefoner og sådan noget der ikk :) */
 
 @media (max-width: 767px) {
-    div {flex-direction: column !important;}
+    div,
+    .photoshop-section {
+    flex-direction: column !important;
+    gap: 20px;
+}
     
 }
