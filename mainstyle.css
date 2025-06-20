@@ -288,6 +288,11 @@ img {
     .photoshop-section {
     flex-direction: column !important;
     gap: 20px;
+    }
 }
-    
+ 
+@media (max-width: 767px) {
+    .main-nav {
+        display: none;
+    }
 }
